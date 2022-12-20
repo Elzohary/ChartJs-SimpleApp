@@ -1,0 +1,126 @@
+.all {
+    /* border: 1px solid white; */
+    box-shadow: rgba(#1e3a8a, 0.8) 1.95px 1.95px 5.6px;
+    width: 100%;
+    background-color: #0F172A;
+    /* position: fixed; */
+    bottom: 0;
+    min-height: 100vh;
+    overflow: auto;
+    padding: 15px;
+
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #93c5fd;
+        border-radius: 10px;
+    }
+}
+
+p {
+    margin-bottom: 0;
+}
+
+input {
+    border: none;
+    outline: none;
+    width: fit-content;
+    border-bottom: 2px solid #06b5d42e;
+    margin-right: 3px;
+
+}
+
+input:focus {
+    border-bottom: 2px solid #06b6d4;
+}
+
+.table {
+    padding-inline: 5px;
+    display: flex;
+    flex-direction: row;
+    max-height: 300px;
+    min-height: 42px;
+    overflow: auto;
+    border: 3px solid #93c5fd;
+    border-radius: 10px;
+    border-right: none;
+    transition: 2s ease-in-out;
+
+    thead, tbody, tr {
+        width: 100%;
+    }
+
+    td {
+        height: 40px;
+    }
+
+    .pos {
+        position:sticky;
+        top: 0;
+        left: 0;
+        background-color: #0F172A;
+        margin-top: 0;
+    }
+
+    .customTd {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .deleteBtn {
+        font-size: 0.8em;
+        border-radius: 10px;
+        color: #fecdd3;
+        border: 1px solid #fecdd3;
+    }
+
+    .deleteBtn:hover {
+        background: #fb7185;
+        border: 1px solid #fb7185;
+        color: white;
+    }
+}
+
+.flippedRow {
+    display: flex;
+    flex-direction: column;
+    width: 10em;
+}
+
+.addBtn {
+    border-radius: 15px;
+    color: #dbeafe;
+    padding-inline: 10px;
+    border: 1px solid #dbeafe;
+}
+
+.addBtn:hover {
+    background-color: #2563eb;
+    border: 1px solid #2563eb;
+}
+
+.myForm {
+    margin-block: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+
+    .innerForm {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            font-weight: 300;
+            width: 90%;
+        }
+
+    }
+
+}
+

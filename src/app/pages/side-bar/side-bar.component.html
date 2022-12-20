@@ -1,0 +1,58 @@
+<div class="all">
+  <div class="d-flex align-items-center gap-5">
+    <p>Bar color: {{ barColor }}</p>
+    <!-- <input type="text" [(ngModel)]="barColor"> -->
+    <form class="">
+      <input class="" type="text" id="color" #color placeholder="Change bar color" />
+      <button class="addBtn" type="submit" (click)="ChangeBarColor(color.value)">add</button>
+    </form>
+  </div>
+  
+  <hr>
+
+  <table class="table mt-3">
+    <thead>
+      <!-- <tr>
+              <th scope="col">X-Axis</th>
+              <th scope="col">Value</th>
+            </tr> -->
+      <tr class="flippedRow">
+        <td class="fw-bold pos">x- Axis</td>
+        <td *ngFor="let i of data.data.labels">{{ i }}</td>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <tr class="flippedRow">
+        <td class="fw-bold pos">Value</td>
+        <td class="customTd" *ngFor="let val of data.data.datasets[0].data; let i = index">
+          {{ val }} 
+          <button class="deleteBtn" (click)="deleteValue(i)">delete</button>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+  <hr>
+  
+  <form class="myForm">
+    <label for="test"> Add on X-Axis</label>
+    <div class="innerForm">
+      <input type="text" id="test" #test placeholder="Add on the x-axis" />
+      <button class="addBtn" type="submit" (click)="addOnXaxis(test.value)">add</button>
+    </div>
+  </form>
+  
+  <form class="myForm">
+    <label for="barValue">Add Value</label>
+    <div class="innerForm">
+      <input type="text" id="barValue" #barValue placeholder="Add bar value" />
+      <button class="addBtn" type="submit" (click)="addBarValue(barValue.value)">add</button>
+    </div>
+  </form>
+
+  <hr>
+  
+  
+</div>
