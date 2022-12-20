@@ -1,5 +1,10 @@
 # ChartJsAngular
 
+Live Site => https://elzohary.github.io/ChartJs-SimpleApp/
+
+![image](https://user-images.githubusercontent.com/96190296/208624270-f9d1ddf2-87d8-41f2-a848-32c1a5d28abd.png)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
 ## Development server
